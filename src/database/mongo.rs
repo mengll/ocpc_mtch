@@ -42,7 +42,7 @@ struct O {
 impl Mymongo {
     // 创建链接库
     pub async fn new() ->Self {
-        let client_options = ClientOptions::parse("mongodb://root:xgbV5kY==wapMo852@192.168.1.241:44126/admin").await.unwrap();
+        let client_options = ClientOptions::parse("mongodb://root:123456@192.168.1.241:44126/admin").await.unwrap();
         let client = Client::with_options(client_options).unwrap();
         let db = client.database("dsp");
         Self{client:client,db:db}
